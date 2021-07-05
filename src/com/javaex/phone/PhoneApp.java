@@ -130,7 +130,7 @@ public class PhoneApp {
 
 			default:
 				System.out.println();
-				System.out.println("잘못된 번호입니다.");
+				System.out.println("[다시 입력해주세요.]");
 				System.out.println();
 				break;
 			}
