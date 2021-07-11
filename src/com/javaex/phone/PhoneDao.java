@@ -177,7 +177,7 @@ public class PhoneDao {
 	}
 
 	// 전화번호 삭제
-	public int delete(PersonVo personVo) {
+	public int delete(int person_id) {
 
 		int count = -1;
 
@@ -192,7 +192,7 @@ public class PhoneDao {
 			delete += "     person_id = ? ";
 
 			pstmt = conn.prepareStatement(delete);
-			pstmt.setInt(1, personVo.getPerson_id());
+			pstmt.setInt(1, person_id);
 
 			count = pstmt.executeUpdate();
 
@@ -257,5 +257,5 @@ public class PhoneDao {
 
 		return personList;
 	}
-	
+
 }

@@ -100,8 +100,7 @@ public class PhoneApp {
 				int d_id_num = sc.nextInt();
 
 				// DELETE 쿼리문 실행
-				PersonVo pDelete = new PersonVo(d_id_num);
-				phoneDao.delete(pDelete);
+				phoneDao.delete(d_id_num);
 
 				break;
 
